@@ -1,0 +1,19 @@
+<div class="container text-center">
+    <h1 class="center-text">Detalle de {{personaje.name}}</h1>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="card" style="width: 22rem;">
+            <img src="{{personaje.image}}" class="card-img-top" alt="{{personaje.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{ personaje.name }}</h5>
+                <p class="card-text">Estado:{{ personaje.status}}</p>
+                <p class="card-text">Especie:{{ personaje.species}}</p>
+                <p class="card-text">Tipo:{{ personaje.type}} </p>
+                <p class="card-text">Genero:{{ personaje.gender}}</p>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" [routerLink]="['/']" >Volver</button>
+</div>
